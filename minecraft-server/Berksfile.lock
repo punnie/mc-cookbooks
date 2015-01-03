@@ -1,0 +1,29 @@
+DEPENDENCIES
+  minecraft
+    git: https://github.com/gregf/chef-minecraft.git
+    revision: 4ad53f290122940a3e446d797d0e8c50e56eecc8
+    ref: 4ad53f2
+  minecraft-server
+    path: .
+    metadata: true
+
+GRAPH
+  apt (2.6.1)
+  build-essential (2.1.3)
+  java (1.29.0)
+  minecraft (0.5.1)
+    apt (>= 0.0.0)
+    java (>= 0.0.0)
+    ohai (>= 0.0.0)
+    runit (>= 0.0.0)
+    yum (>= 0.0.0)
+  minecraft-server (0.1.0)
+    minecraft (>= 0.0.0)
+  ohai (2.0.1)
+  runit (1.5.12)
+    build-essential (>= 0.0.0)
+    yum (~> 3.0)
+    yum-epel (>= 0.0.0)
+  yum (3.5.2)
+  yum-epel (0.5.3)
+    yum (~> 3.0)

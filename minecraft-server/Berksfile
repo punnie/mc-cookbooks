@@ -1,0 +1,5 @@
+source "https://supermarket.chef.io"
+
+cookbook 'minecraft', git: 'https://github.com/gregf/chef-minecraft.git', ref: '4ad53f290122940a3e446d797d0e8c50e56eecc8'
+
+metadata
